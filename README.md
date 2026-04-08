@@ -1,0 +1,14 @@
+# Mockup for Science Portal searching the SDS TAP service
+
+## Running it
+Use Docker to start a web server:
+```sh
+cd science-portal-sds-mockup
+docker run --rm -ti -p 8000:80 -v $(pwd):/usr/share/nginx/html nginx
+```
+
+Then visit http://localhost:8000/science-portal
+
+## Changes
+
+There is now a `Search...` button that will bring up the new search modal.  This is *a mockup only* to seek from the `images.json` file.

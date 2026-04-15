@@ -14837,7 +14837,7 @@ this nav dropdown rendering */
                                               <option class="sp-form" value="espsrc">espsrc</option>
                                               <option class="sp-form" value="lsst">lsst</option>
                                               <option class="sp-form" value="new-new-earth">new-new-earth</option>
-                                              <option class="sp-form" value="skaha">skaha</option>
+                                              <option class="sp-form" value="canfar">canfar</option>
                                               <option class="sp-form" value="srcnet">srcnet</option>
                                               <option class="sp-form" value="swesrc">swesrc</option>
                                               <option class="sp-form" value="unions">unions</option>
@@ -14862,7 +14862,7 @@ this nav dropdown rendering */
                                           <div class="col-sm-7 container">
                                               <div class="row">
                                               <div class="col-sm-10">
-                                                <select name="image" class="sp-form-cursor form-select">
+                                                <select name="image" id="image_select" class="sp-form-cursor form-select">
                                                   <option class="sp-form" value="images.canfar.net/skaha/astroflow:latest">astroflow:latest
                                                   </option>
                                                   <option class="sp-form" value="images.canfar.net/skaha/astroflow-cuda:latest">
@@ -14923,6 +14923,47 @@ this nav dropdown rendering */
                                                     skaha-notebook:23.08</option>
                                                   <option class="sp-form" value="images.canfar.net/skaha/skirt-notebook:25.03">
                                                     skirt-notebook:25.03</option>
+                                                  <!-- SDS catalog (images.json) -->
+                                                  <option class="sp-form" value="images.canfar.net/canfar/astro-notebook:0.1.0">canfar/astro-notebook:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/astro-notebook:1.0.0">canfar/astro-notebook:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/catalog-tools:0.1.0">canfar/catalog-tools:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/catalog-tools:1.0.0">canfar/catalog-tools:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/cosmo-tools:0.2.0">canfar/cosmo-tools:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/data-science:0.1.0">canfar/data-science:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/data-science:1.0.0">canfar/data-science:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/gpu-viz:0.1.0">canfar/gpu-viz:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/gpu-viz:1.0.0">canfar/gpu-viz:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/ml-gpu:0.2.0">canfar/ml-gpu:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/r-stats:0.1.0">canfar/r-stats:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/r-stats:1.0.0">canfar/r-stats:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/radio-tools:0.1.0">canfar/radio-tools:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/radio-tools:0.3.0">canfar/radio-tools:0.3.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/sim-framework:0.1.0">canfar/sim-framework:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/sim-framework:1.0.0">canfar/sim-framework:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/spark-analytics:0.2.0">canfar/spark-analytics:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/spectral-tools:0.2.0">canfar/spectral-tools:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/timeseries-tools:0.2.0">canfar/timeseries-tools:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/canfar/viz-tools:0.2.0">canfar/viz-tools:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/astro-notebook:0.2.0">srcnet/astro-notebook:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/catalog-tools:0.2.0">srcnet/catalog-tools:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/cosmo-tools:0.1.0">srcnet/cosmo-tools:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/cosmo-tools:1.0.0">srcnet/cosmo-tools:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/data-science:0.2.0">srcnet/data-science:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/gpu-viz:0.2.0">srcnet/gpu-viz:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/ml-gpu:0.1.0">srcnet/ml-gpu:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/ml-gpu:1.0.0">srcnet/ml-gpu:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/r-stats:0.2.0">srcnet/r-stats:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/radio-tools:0.2.0">srcnet/radio-tools:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/radio-tools:1.0.0">srcnet/radio-tools:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/sim-framework:0.2.0">srcnet/sim-framework:0.2.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/spark-analytics:0.1.0">srcnet/spark-analytics:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/spark-analytics:1.0.0">srcnet/spark-analytics:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/spectral-tools:0.1.0">srcnet/spectral-tools:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/spectral-tools:1.0.0">srcnet/spectral-tools:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/timeseries-tools:0.1.0">srcnet/timeseries-tools:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/timeseries-tools:1.0.0">srcnet/timeseries-tools:1.0.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/viz-tools:0.1.0">srcnet/viz-tools:0.1.0</option>
+                                                  <option class="sp-form" value="images.canfar.net/srcnet/viz-tools:1.0.0">srcnet/viz-tools:1.0.0</option>
                                                 </select>
                                               </div>
                                               <div class="sp-browse-button col-sm-2" style="padding-right: 0 !important; padding-left: 0 !important;">

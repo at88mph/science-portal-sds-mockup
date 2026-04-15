@@ -7,7 +7,7 @@ cd science-portal-sds-mockup
 docker run --rm -ti -p 8000:80 -v $(pwd):/usr/share/nginx/html nginx
 ```
 
-Then visit http://localhost:8000/science-portal
+Then visit http://localhost:8000/science-portal/.  The end slash is important.
 
 ## Changes
 

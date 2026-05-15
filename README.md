@@ -3,6 +3,7 @@
 ## Running it
 Use Docker to start a web server:
 ```sh
+git clone https://github.com/at88mph/science-portal-sds-mockup.git
 cd science-portal-sds-mockup
 docker run --rm -ti -p 8000:80 -v $(pwd):/usr/share/nginx/html nginx
 ```
